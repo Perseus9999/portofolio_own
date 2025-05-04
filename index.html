@@ -23,9 +23,10 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animation.css">
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -39,53 +40,44 @@
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="animated-gradient-bg">
 
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+
+
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <div class="profile-img">
+        <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      </div>
+  
+      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Kushka Yaroslav</h1>
+      </a>
+  
+      <div class="social-links text-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+  
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li><a href="#testimonials"><i class="bi bi-hand-thumbs-up-fill navicon"></i>Testimonials</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
 
   </header>
 
@@ -93,14 +85,13 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h1>Kushka Yaroslav</h1>
-        <p>I'm <span class="typed" data-typed-items="Full stack Freelancer, Blockchain Developer, Web Developer, Android Developer,">Full stack Freelancer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      <div id="particles-js">
+        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h1>Kushka Yaroslav</h1>
+          <p>I'm <span class="typed" data-typed-items="Full stack Freelancer, Blockchain Developer, Web Developer, Android Developer,">Full stack Freelancer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        </div>
       </div>
-
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
@@ -109,7 +100,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>From smart contract audits to responsive web dashboards and Android wallet apps, I craft cohesive digital ecosystems. Whether it’s Web3, cloud APIs, or mobile UX, I ensure robustness at every layer.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -119,10 +110,9 @@
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <h2>Blockchain Developer &amp; Web Developer &amp; Android Developer</h2>
             <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Full-stack developer specializing in Blockchain, Web, and Android technologies. I build secure smart contracts, responsive web applications, and high-performance mobile apps—delivering seamless digital experiences from backend logic to user-friendly interfaces.
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -143,8 +133,7 @@
               </div>
             </div>
             <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+              I have experience in building decentralized apps (DApps), scalable web platforms, and intuitive mobile experiences. Expertise in Solidity, React, Node.js, Kotlin, and Web3.js, with a focus on security, performance, and clean architecture.
             </p>
           </div>
         </div>
@@ -163,7 +152,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="3" class="purecounter"></span>
               <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
             </div>
           </div><!-- End Stats Item -->
@@ -171,7 +160,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="3" class="purecounter"></span>
               <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
             </div>
           </div><!-- End Stats Item -->
@@ -179,7 +168,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1556" data-purecounter-duration="3" class="purecounter"></span>
               <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
             </div>
           </div><!-- End Stats Item -->
@@ -187,7 +176,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="3" class="purecounter"></span>
               <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
             </div>
           </div><!-- End Stats Item -->
@@ -221,41 +210,117 @@
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <span class="skill"><span>CSS</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>PHP</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>React, Next</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Java</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Solidity</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Rust</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Ethereum, BSC, TRON</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>SOLANA, TON</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <span class="skill"><span>Smart contract</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
-          </div>
-
-          <div class="col-lg-6">
-
             <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+              <span class="skill"><span>Cross chain bridge</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+              <span class="skill"><span>Uniswap</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+              <span class="skill"><span>Database</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>API integration</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Android</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
@@ -273,66 +338,107 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+        <p>Blockchain & Full Stack Developer with over 7 years
+          of specialized experience in architect and deploying
+          decentralized applications across various EVM-compatible networks. Expertise in Solidity, Web3.js,
+          and Node.js drives the enhancement of smart
+          contract performance, security, and gas efficiency.
+          A strong commitment to innovation fuels the
+          development of cutting-edge solutions in DeFi and
+          NFTs. Passionate about creating secure, scalable
+          ecosystems that leverage the full potential of
+          blockchain technology, transforming ambitious
+          concepts into reality while adhering to industry best
+          practices.
 
       <div class="container">
 
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title">SUMMARY</h3>
 
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <h4>Blockchain & Web & Android Developer</h4>
+              <p><em>As a versatile developer, I provide end-to-end solutions for Blockchain, Web, and Android projects. From auditing smart contracts and developing Web3 dashboards to optimizing mobile UX, I bridge cutting-edge tech with business needs. Available for contracts, collaborations, and innovative startups.</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">EDUCATION</h3>
+            <div class="resume-item">
+              <h4>Master of Computer Science (MSCS)</h4>
+              <h5>2007 - 2011</h5>
+              <p><em>Ivan Franko National  University of Lviv, LVIV</em></p>
+              <p>
+                Completed a comprehensive program that provided a solid foundation in computer science,
+                focusing on both theoretical and practical aspects.
+                Key areas of study included software development, systems engineering, and technology
+                integration. Actively participated in various projects and collaborations, enhancing problem
+                solving skills and technical expertise.
+              </p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">CERTIFICATIONS</h3>
+            <div class="resume-item">
+              <h4>&#10031; Certified Smart contract Developer</h4>
+              <h5>Blockchain Council, 2016</h5>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>Designed and deployed advanced smart contracts using Solidity & Hardhat.</li>
+                <li>Implemented Uniswap v3/v4 Hooks and LayerZero cross-chain messaging.</li>
+                <li>Emphasis on gas optimization, modularity, and upgradeability.</li>
+                <li>Published and maintained verified contracts on BSC, Ethereum, and Polygon.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
-
+              <h4>&#10031; Certified Blockchain Developer</h4>
+              <h5>Blockchain Council, 2019</h5>
+              <ul>
+                <li>Smart contract development (Solidity, Rust)</li>
+                <li>DApp architecture & deployment (Ethereum, Solana, BSC)</li>
+                <li>Token standards (ERC-20, SPL tokens)</li>
+                <li>DeFi protocol integration ( Uniswap, Pancake Swap, LayerZero)</li>
+                <li>Security best practices & contract audits</li>
+                <li>Web3 integration with frontend frameworks</li>
+              </ul>
+            </div><!-- End Resume Item -->
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>Blockchain Professional Developer & Android Developer</h4>
+              <h5>2014 - 2017</h5>
+              <p><em>SoftServe, Lviv </em></p>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li>Developed and deployed smart contracts with Solidity and Rust.</li>
+                <li>Integrated Web3 libraries for DApp frontend connectivity.</li>
+                <li>Designed and built native Android applications using Kotlin and Jetpack Compose.</li>
+                <li>Collaborated on agile development teams to enhance project efficiency.</li>
+                <li>Conducted code reviews and implemented best practices in software development.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>Blockchain Professional Developer & Web Developer & Android Developer</h4>
+              <h5>2017 - 2020</h5>
+              <p><em>Intellias, Lviv</em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>Built and optimized DeFi protocols, NFTs, and token standards (ERC-20, ERC-721).</li>
+                <li>Developed responsive, high-performance web applications using React.js, Next.js, and Vue.js.</li>
+                <li>Published applications on Google Play Store, adhering to best practices.</li>
+                <li>Collaborated on projects involving EVM-compatible chains ( Ethereum, Polygon, BSC) and non-EVM ( Solana, Cosmos).</li>
+                <li>Implemented smart contract audits to ensure security and compliance.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Blockchain Developer & Backend Senior Developer</h4>
+              <h5>2020 - 2025</h5>
+              <p><em>N-iX, Lviv</em></p>
+              <ul>
+                <li>Developed and deployed smart contracts using Hardhat, Foundry, and Anchor.</li>
+                <li>Implemented robust security measures to mitigate vulnerabilities.</li>
+                <li>Built and optimized RESTful and GraphQL APIs with Node.js, Express, Django, and Laravel.</li>
+                <li>Integrated third-party services to enhance application functionality.</li>
+                <li>Managed databases including PostgreSQL, MongoDB, and Firebase, ensuring secure authentication with JWT and OAuth.</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -359,10 +465,10 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter=".filter-app">Blockchain</li>
+            <li data-filter=".filter-product">Telegram</li>
+            <li data-filter=".filter-branding">Bot</li>
+            <li data-filter=".filter-books">Android</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -520,8 +626,7 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
-
+    <section id="services" class="services section" >
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
@@ -532,27 +637,18 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="service-details.html#blockchain" class="stretched-link">Blockchain</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
+              <h4 class="title"><a href="service-details.html#webDesign" class="stretched-link">Web Design</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div><!-- End Service Item -->
@@ -560,15 +656,23 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
+              <h4 class="title"><a href="service-details.html#telegramMiniApp" class="stretched-link">Telegram Mini App</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html#android" class="stretched-link">Android</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
             <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
+              <h4 class="title"><a href="service-details.html#cryptoMarketAnalysis" class="stretched-link">Crypto-Market Analysis</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
           </div><!-- End Service Item -->
@@ -576,7 +680,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
             <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+              <h4 class="title"><a href="service-details.html#tradingStretagy" class="stretched-link">Trading Strategy</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div><!-- End Service Item -->
@@ -821,9 +925,51 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#ffffff" },
+        "shape": { 
+          "type": ["circle", "triangle", "polygon"],
+          "polygon": { "nb_sides": 6 }
+        },
+        "opacity": { "value": 0.5, "random": true },
+        "size": { "value": 3, "random": true, "anim": { "enable": true, "speed": 2 } },
+        "line_linked": { 
+          "enable": true, 
+          "distance": 150, 
+          "color": "#ffffff", 
+          "opacity": 0.4, 
+          "width": 1 
+        },
+        "move": { 
+          "enable": true, 
+          "speed": 2, 
+          "direction": "none", 
+          "random": true, 
+          "straight": false,
+          "out_mode": "out" 
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        }
+      }
+    });
+  </script>
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 
 </body>
 

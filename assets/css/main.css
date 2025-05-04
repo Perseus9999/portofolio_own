@@ -19,9 +19,9 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
+  --background-color: #041b27; /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -29,7 +29,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
+  --nav-color: #041b27;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -40,12 +40,12 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4fafd;
+  --background-color: #041b27;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #040b14;
+  --background-color: #041b27;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #151f2b;
@@ -92,7 +92,7 @@ h6 {
 .php-email-form .error-message {
   display: none;
   background: #df1529;
-  color: #ffffff;
+  color: #000000;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -101,7 +101,7 @@ h6 {
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
+  color: #000000;
   background: #059652;
   text-align: center;
   padding: 15px;
@@ -157,35 +157,35 @@ h6 {
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.header .profile-img img {
+.header .animated-gradient-bg .profile-img img {
   margin: 15px auto;
   display: block;
   width: 120px;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-.header .logo {
+.header .animated-gradient-bg .logo {
   line-height: 1;
   margin-bottom: 15px;
 }
 
-.header .logo img {
+.header .animated-gradient-bg .logo img {
   max-height: 32px;
   margin-right: 8px;
 }
 
-.header .logo h1 {
+.header .animated-gradient-bg .logo h1 {
   font-size: 24px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
 }
 
-.header .social-links {
+.header .animated-gradient-bg .social-links {
   margin: 0 0 20px 0;
 }
 
-.header .social-links a {
+.header .animated-gradient-bg .social-links a {
   font-size: 16px;
   display: inline-flex;
   align-items: center;
@@ -200,7 +200,7 @@ h6 {
   transition: 0.3s;
 }
 
-.header .social-links a:hover {
+.header .animated-gradient-bg .social-links a:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
 }
@@ -266,7 +266,7 @@ h6 {
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
+  color: white;
   padding: 15px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
@@ -309,7 +309,7 @@ h6 {
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus {
-  color: var(--nav-hover-color);
+  color: var(--accent-color);
 }
 
 .navmenu a:hover .navicon,
@@ -469,6 +469,7 @@ h6 {
   background-color: var(--background-color);
   padding: 25px 0;
   position: relative;
+  border-bottom: white, solid, 1px;
 }
 
 .page-title h1 {
@@ -484,17 +485,19 @@ h6 {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
+  color: white;
 }
 
 .page-title .breadcrumbs ol li+li {
   padding-left: 10px;
+  color: white;
 }
 
 .page-title .breadcrumbs ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, white, transparent 70%);
 }
 
 /*--------------------------------------------------------------
@@ -528,7 +531,7 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
+  width: 100%;
   height: 3px;
   background: var(--accent-color);
   left: 0;
@@ -552,14 +555,14 @@ section,
   justify-content: center;
 }
 
-.hero img {
+.hero #particles-js img {
   position: absolute;
   inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: -1;
 }
 
 .hero:before {
@@ -570,12 +573,13 @@ section,
   z-index: 2;
 }
 
-.hero .container {
+.hero #particles-js .container {
   position: relative;
   z-index: 3;
+  margin-top: 350px;
 }
 
-.hero h1 {
+.hero #particles-js h1 {
   margin: 0;
   font-size: 100px;
   font-weight: 900;
@@ -583,7 +587,7 @@ section,
   text-shadow: #111111;
 }
 
-.hero p {
+.hero #particles-js p {
   margin: 5px 0 0 0;
   font-size: 40px;
   font-weight: 400;
@@ -591,16 +595,16 @@ section,
   text-shadow: #111111;
 }
 
-.hero p span {
+.hero #particles-js p span {
   letter-spacing: 1px;
   border-bottom: 2px solid var(--accent-color);
 }
 
-.hero .social-links {
+.hero #particles-js .social-links {
   margin-top: 25px;
 }
 
-.hero .social-links a {
+.hero #particles-js .social-links a {
   font-size: 24px;
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
@@ -609,16 +613,16 @@ section,
   transition: 0.3s;
 }
 
-.hero .social-links a:hover {
+.hero #particles-js .social-links a:hover {
   color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
-  .hero h2 {
+  .hero #particles-js h2 {
     font-size: 32px;
   }
 
-  .hero p {
+  .hero #particles-js p {
     font-size: 20px;
   }
 }
@@ -1010,6 +1014,7 @@ section,
   margin-bottom: 35px;
   border-radius: 6px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #000000;
 }
 
 .testimonials .testimonial-item p::after {
@@ -1083,12 +1088,14 @@ section,
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
+  color: #000000;
 }
 
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  color: #000000;
 }
 
 .contact .info-item:hover i {
@@ -1101,6 +1108,7 @@ section,
   height: 100%;
   padding: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  color: #000000;
 }
 
 @media (max-width: 575px) {
@@ -1116,9 +1124,9 @@ section,
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
+  color: #000000;
   background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, #000000, transparent 80%);
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -1269,7 +1277,9 @@ section,
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;
+  margin-top: 0px;
   color: var(--accent-color);
+  position: relative;
 }
 
 /*--------------------------------------------------------------

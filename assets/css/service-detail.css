@@ -1,0 +1,38 @@
+.col-lg-8 img {
+    width: 100%;
+    aspect-ratio: 2/1;
+  }
+
+.col-lg-8 {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(200px);
+}
+
+.col-lg-8.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services-list a {
+  transition: all 1s ease;
+}
+
+.services-list a.active {
+  color: #fff;
+  /* background-color: #3498db; Change to your theme color */
+}

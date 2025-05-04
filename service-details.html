@@ -26,6 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/animation.css">
+  <link rel="stylesheet" href="assets/css/service-detail.css">
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -39,60 +41,47 @@
 <body class="service-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="animated-gradient-bg">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <div class="profile-img">
+        <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      </div>
 
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-
+      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Kushka Yaroslav</h1>
+      </a>
+  
+      <div class="social-links text-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+  
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li><a href="index.html#testimonials"><i class="bi bi-hand-thumbs-up-fill navicon"></i> Testimonials</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>    
   </header>
 
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background">
+    <div class="page-title dark-background" style="border-bottom: rgb(238, 229, 229) solid 1px;">
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0">Service Details</h1>
         <nav class="breadcrumbs">
@@ -113,34 +102,102 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
+              <a href="#blockchain" class="active">Blockchain Development</a>
+              <a href="#webDesign" class="active">Web Design</a>
+              <a href="#telegramMiniApp">Telegram Mini App</a>
+              <a href="#android" class="active">Android Development</a>
+              <a href="#cryptoMarketAnalysis">Crypto-Market Analysis</a>
+              <a href="#tradingStretagy">Trading Strategy</a>
             </div>
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+            <h4>Full-Cycle Digital & Crypto Solutions</h4>
+            <p>I design high-performance websites, build interactive Telegram mini-apps, and deliver sharp crypto market analysis—paired with proven trading strategies. Whether you need a stunning online presence, automated Telegram tools, or data-driven trading insights, my solutions blend innovation with execution to elevate your digital and financial success.</p>
+            <p style="font-size: 20px;"><i class="bi bi-wrench-adjustable-circle" style="width: 20px;"></i> <strong>Key Services</strong></p>
+            <ul>
+              <li><i class="bi bi-plus-circle"></i> <span><strong>Blockchain: </strong>Building & auditing Dapp, Dex, and Defi.</span></li>
+              <li><i class="bi bi-plus-circle"></i> <span><strong>Web Design: </strong>Sleek, fast mobile-optimized sites.</span></li>
+              <li><i class="bi bi-plus-circle"></i> <span><strong>Telegram Mini Apps: </strong>Bots, community tools.</span></li>
+              <li><i class="bi bi-plus-circle"></i> <span><strong>Android: </strong>Native mobile applications.</span></li>
+              <li><i class="bi bi-plus-circle"></i> <span><strong>Crypto Analysis: </strong>Market trends, deep dives.</span></li>
+              <li><i class="bi bi-plus-circle"></i> <span><strong>Trading Strategies: </strong>Data-driven, trading systems.</span></li>
+            </ul>
           </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
+          <div id="blockchain" class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/service12.jpg" alt="" class="img-fluid services-img">
+            <h3>Blockchain Development Solutions Tailored to Your Vision</h3>
+            <p>I architect secure, efficient decentralized systems for DeFi, NFTs, and Web3—whether you need EVM-based smart contracts, Solana programs, or cross-chain dApps. My development prioritizes security, scalability, and real-world usability.</p>
+            <p>My Approach:</p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Smart Contract Development – Custom Solidity contracts (Hardhat/Foundry) with ERC-20/721/1155 standards.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Security Audits – Slither, MythX, and manual review for vulnerabilities like reentrancy or oracle exploits.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Gas Optimization – Cost-efficient patterns and contract optimized.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Rust & Anchor Framework – High-performance on-chain programs with PDA (Program Derived Address) security.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>SPL Tokens & NFTs – Minting, metadata customization, and compression for low-cost scaling.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Solana Pay Integration – Fast, fee-less payment solutions for e-commerce or dApps.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Sealevel Parallelization – Maximizing throughput by leveraging Solana’s runtime architecture.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Decentralized Oracles – Chainlink/Pyth integration for hybrid systems.</span></li>
+            </ul>         
+          </div>
+          <div id="webDesign" class="col-lg-8 active" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/service1.jpg" alt="" class="img-fluid services-img">
+            <h3>Design and build a pixel perfect and modern website</h3>
+            <p>I craft visually stunning, user-friendly websites tailored to your unique needs. Whether you're a startup, small business, or creative professional, I blend aesthetic appeal with seamless functionality to deliver an engaging online experience.</p>
+            <p>What I Offer:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>ACustom Web Design – Bespoke designs that reflect your brand’s personality.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Custom Web Design – Bespoke designs that reflect your brand’s personality.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>UI/UX Optimization – Intuitive navigation for better user engagement.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Fast & Clean Code – Websites built for speed and SEO efficiency.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Collaborative Process – Your vision, my expertise—let’s create something amazing.</span></li>
             </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
+          </div>
+          <div id="telegramMiniApp" class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/service2.jpg" alt="" class="img-fluid services-img">
+            <h3>Boost Engagement with Lightweight, Powerful Telegram Apps</h3>
+            <p>I design and develop high-performance Telegram Mini Apps that run seamlessly within Telegram’s ecosystem. From interactive bots to crypto wallets and gaming apps, I create fast, secure, and user-friendly solutions that leverage Telegram’s massive reach.            </p>
+            <p>Why Choose My Service?</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Native Telegram Integration – Smooth UX with no extra installations.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Blockchain-Ready – Support for crypto payments (TON, Bitcoin, etc.).</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Custom Functionality – Games, utilities, or DeFi tools—built to your needs.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span> Scalable & Lightweight – Optimized for speed and low data usage.</span></li>
+            </ul>         
+          </div>
+          <div id="android" class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/android.jpg" alt="" class="img-fluid services-img">
+            <h3>Android Development Engineered for Performance & Web3 Integration</h3>
+            <p>I build natively optimized Android apps that bridge mobile convenience with blockchain functionality—whether you need DeFi wallets, NFT viewers, or enterprise-grade Kotlin applications. My development prioritizes sleek UX, security, and seamless Web3 interoperability.</p>
+            <p>My Approach:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Kotlin (Primary, with Coroutines for async tasks).</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Android SDK (Latest APIs and backward compatibility).</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Responsive UI: Adaptive layouts for all screen sizes (phones, tablets, foldables).</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Performance Optimization: Efficient memory management, background task handling.</span></li>
+            </ul>         
+          </div>
+          <div id="cryptoMarketAnalysis" class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/service3.jpg" alt="" class="img-fluid services-img">
+            <h3>Data-Driven Insights for Smarter Crypto Decisions</h3>
+            <p>I provide in-depth crypto market analysis—combining technical indicators, on-chain data, and macroeconomic trends to help you navigate volatility and spot opportunities.</p>
+            <p>What I Deliver:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Fundamental Reports – Project vetting, tokenomics, and trend forecasting.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>On-Chain Metrics – trading activity, exchange flows, and network health.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Actionable Alerts – Timely updates on entry/exit points.</span></li>
+            </ul>
+          </div>
+          <div id="tradingStretagy" class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/service4.jpg" alt="" class="img-fluid services-img">
+            <h3>Algorithmic & Discretionary Strategies Tailored to Your Goals</h3>
+            <p>I design proven trading strategies for crypto, forex, or stocks—whether you prefer automated bots or manual frameworks. My systems focus on risk management, consistency, and adaptability to market shifts.</p>
+            <p>My Approach:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Algorithmic Trading – Custom bots (Python, Pine Script, MT4/5) for 24/7 execution.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Backtesting & Optimization – Historical validation for robust performance.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Risk Management Rules – Stop-loss, position sizing, and diversification plans.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Dynamic Adjustments – Strategies evolve with market conditions.</span></li>
+            </ul>
           </div>
 
         </div>
@@ -155,7 +212,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">2025</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -190,5 +247,72 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.services-list a');
+  const sections = document.querySelectorAll('.col-lg-8');
+  
+  // Function to switch tabs with animation
+  function switchTab(clickedTab) {
+    // Remove 'active' class from all tabs and sections
+    tabs.forEach(t => t.classList.remove('active'));
+    sections.forEach(s => {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+
+    // Add 'active' class to clicked tab
+    clickedTab.classList.add('active');
+    
+    // Get the target section
+    const targetId = clickedTab.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    
+    // Show and animate the target section
+    setTimeout(() => {
+      targetSection.style.display = 'block';
+      void targetSection.offsetWidth; // Trigger reflow
+      targetSection.classList.add('active');
+    }, 50);
+  }
+
+  // Check URL hash on page load
+  function checkHashOnLoad() {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetTab = document.querySelector(`.services-list a[href="${hash}"]`);
+      if (targetTab) {
+        switchTab(targetTab);
+        // Smooth scroll to the section
+        setTimeout(() => {
+          document.querySelector(hash).scrollIntoView({
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    } else if (tabs.length > 0) {
+      // Activate first tab by default if no hash
+      switchTab(tabs[0]);
+    }
+  }
+
+  // Add click event listeners to tabs
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Update URL hash without scrolling
+      history.pushState(null, null, this.getAttribute('href'));
+      switchTab(this);
+    });
+  });
+
+  // Check hash on initial load
+  checkHashOnLoad();
+
+  // Also check hash when navigating back/forward
+  window.addEventListener('popstate', checkHashOnLoad);
+});
+</script>
 
 </html>
